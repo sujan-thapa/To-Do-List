@@ -23,8 +23,9 @@ app.use(express.json());
 // Middleware
 app.use(cors());
 
-const route = app.use("/api", routes);
-
+// const route = app.use("/api", routes);
+// Routes
+app.use("/api", routes);
 
 // app.get('/', (req, res) => {
 //   res.send('Hello World!')
